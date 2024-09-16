@@ -17,6 +17,8 @@ services:
       CONFIRM_MODEL_SERVER_13: 'http://openlm:5000/'
     networks:
       - private_network
+    ports:
+      - "3000:3000"
   redis:
     image: oraprotocol/redis:latest
     container_name: ora-redis

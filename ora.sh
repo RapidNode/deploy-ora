@@ -36,7 +36,7 @@ fi
 echo
 
 # Verify that environment variables have been loaded correctly
-if [[ -z "$PRIV_KEY" || -z "$MAINNET_WSS" || -z "$MAINNET_HTTP" || -z "$SEPOLIA_WSS" || -z "$SEPOLIA_HTTP" ]]; then
+if [[ -z "$PRIV_KEY" || -z "$SEPOLIA_WSS" || -z "$SEPOLIA_HTTP" ]]; then
     show "One or more required environment variables are missing. Please check the .env file."
     exit 1
 fi
